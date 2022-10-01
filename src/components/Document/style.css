@@ -1,0 +1,53 @@
+.document {
+  width: 60vw;
+  height: 50vh;
+  padding: 10px;
+  position: relative;
+}
+.document,
+.document:before,
+.document:after {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.document:before,
+.document:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateZ(2.5deg);
+  -o-transform: rotate(2.5deg);
+  transform: rotateZ(2.5deg);
+  z-index: -1;
+}
+
+.document:after {
+  -webkit-transform: rotateZ(-2.5deg);
+  -o-transform: rotate(-2.5deg);
+  transform: rotateZ(-2.5deg);
+}
+
+.title {
+  margin: 5px 10px;
+}
+.editor {
+  padding: 50px;
+  outline: none;
+}
+.editor[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #555;
+}
+
+.editor .highlight {
+  border-bottom: 3px solid rgb(250, 116, 116);
+  cursor: pointer;
+}
+.editor .highlight:hover {
+  border-bottom: 3px solid rgb(254, 38, 38);
+}
