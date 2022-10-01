@@ -10,7 +10,7 @@ const Title = React.memo(() => {
         alt="logo"
       />
       <h3>
-        A Simple Tool to Correct your <span className="highlight">Mistkes</span>
+        A Simple Tool to Correct <span className="highlight">Mistkes</span>
       </h3>
     </div>
   );
