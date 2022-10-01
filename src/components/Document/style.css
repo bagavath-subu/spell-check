@@ -35,6 +35,7 @@
 .editor {
   padding: 50px;
   outline: none;
+  height: 100%;
 }
 .editor[placeholder]:empty:before {
   content: attr(placeholder);
