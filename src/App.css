@@ -15,10 +15,10 @@
 }
 .title {
   display: flex;
-  gap: 15px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 .title h1 {
   text-transform: uppercase;
