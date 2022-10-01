@@ -41,10 +41,12 @@
   color: #555;
 }
 
-.editor .highlight {
+/* .editor  */
+.highlight {
   border-bottom: 3px solid rgb(250, 116, 116);
   cursor: pointer;
 }
-.editor .highlight:hover {
+/* .editor  */
+.highlight:hover {
   border-bottom: 3px solid rgb(254, 38, 38);
 }

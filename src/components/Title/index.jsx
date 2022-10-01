@@ -9,6 +9,9 @@ const Title = React.memo(() => {
         src={"/images/spell-check.png"}
         alt="logo"
       />
+      <h3>
+        A Simple Tool to Correct your <span className="highlight">Mistkes</span>
+      </h3>
     </div>
   );
 });
