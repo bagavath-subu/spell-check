@@ -32,9 +32,6 @@
   transform: rotateZ(-2.5deg);
 }
 
-.title {
-  margin: 5px 10px;
-}
 .editor {
   padding: 50px;
   outline: none;

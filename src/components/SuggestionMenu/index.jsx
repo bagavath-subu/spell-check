@@ -1,7 +1,8 @@
+import React from "react";
 import { useContextMenu } from "../../hooks";
 import "./style.css";
 
-const SuggestionMenu = ({ clickHandler }) => {
+const SuggestionMenu = React.memo(({ clickHandler }) => {
   const { anchorPoint, show, targetData } = useContextMenu();
 
   return (
@@ -22,6 +23,6 @@ const SuggestionMenu = ({ clickHandler }) => {
       )}
     </>
   );
-};
+});
 
 export default SuggestionMenu;

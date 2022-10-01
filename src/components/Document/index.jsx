@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
 import "./style.css";
 import { useDebounce } from "../../hooks";
@@ -37,16 +37,19 @@ const Document = () => {
     setContent(value);
   };
 
-  const clickHandler = (target, value) => {
-    const parsedDoc = getTextSegments(content);
-    const replacedText = replaceWord(
-      parsedDoc,
-      value,
-      target?.start,
-      target?.end
-    );
-    setContent(replacedText);
-  };
+  const clickHandler = useCallback(
+    (target, value) => {
+      const parsedDoc = getTextSegments(content);
+      const replacedText = replaceWord(
+        parsedDoc,
+        value,
+        target?.start,
+        target?.end
+      );
+      setContent(replacedText);
+    },
+    [content]
+  );
 
   return (
     <div className="document">
