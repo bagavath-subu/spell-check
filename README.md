@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Spell Check React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site is live, try out [here](https://spl-check.netlify.app).
 
 ## Available Scripts
 
